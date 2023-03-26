@@ -13,9 +13,10 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
-
+  const numStr = num.toString() //primero se convierte el número a string
+  const numReversed = numStr.split('').reverse().join('') //se invierte el string
+  return numStr === numReversed //se comprueba si el string invertido es igual al original
 }
-
 // No modifiques nada debajo de esta linea //
 
 module.exports = numeroSimetrico
